@@ -6,6 +6,7 @@ body {
     background: url('assets/background.jpg') no-repeat center center fixed;
     background-size: cover;
   }
+  /* navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -84,6 +85,51 @@ line-height: 30px;
     display: none;
 }
 
+/* banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #ffffff;
+  }
+  .banner-content {
+    max-width: 50%;
+  }
+  #empower{
+      color: rgb(254, 163, 1); }
+  .banner-content h1 {
+    font-size: 2.5rem;
+    color: rgb(17, 17, 17); 
+    margin-bottom: 10px;
+  }
+  .banner-content h1 span {
+    color: #007bff;
+  }
+  .banner-content p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .banner-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .banner-image {
+    max-width: 40%;
+    position: relative;
+  }
+  .banner-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
     .menu-icon {
@@ -128,4 +174,67 @@ line-height: 30px;
     }
 }
 
-    
+    /*banner media query*/
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust Banner Layout */
+    .banner {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .banner-image {
+      order: -1; /* Move image to the top */
+      max-width: 80%;
+      margin: 0 auto 20px; /* Center image with space below */
+    }
+
+    .banner-image img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .banner-content {
+      max-width: 100%;
+      text-align: center; /* Center-align content */
+    }
+
+    .banner-content h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .banner-content p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .banner-content .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    /* Further Adjustments for Extra Small Devices */
+    .banner {
+      padding: 15px;
+    }
+
+    .banner-image {
+      max-width: 90%;
+    }
+
+    .banner-content h1 {
+      font-size: 1.5rem;
+    }
+
+    .banner-content p {
+      font-size: 0.8rem;
+    }
+
+    .banner-content .btn {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
