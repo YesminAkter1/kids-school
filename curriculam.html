@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standard Curriculum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: url('assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.curriculum {
+  text-align: center;
+  padding: 50px 20px;
+  color: #333;
+}
+
+.curriculum h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.card a:hover {
+  background-color: #0056b3;
+}
+
+.arrow-buttons {
+  margin-top: 30px;
+}
+
+.arrow-buttons button {
+  background-color: #f0a500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.arrow-buttons button:hover {
+  background-color: #d88800;
+  transform: scale(1.1);
+}
+/*media query*/
+@media screen and (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%; /* Take more than 90% of the device width */
+  }
+
+  .arrow-buttons {
+    margin-top: 20px;
+  }
+
+  .curriculum h2 {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <section class="curriculum">
+    <h2>Standard Curriculum</h2>
+    <div class="cards-container">
+      <div class="card" style="background: linear-gradient(135deg, #d7e9fc, #f0f8ff);">
+        <img src="assets/kinder.png" alt="Kinder">
+        <h3>Kinder (3-6 Years)</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus sodales.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card" style="background: linear-gradient(135deg, #fff4d8, #ffecd0);">
+        <img src="assets/elementary.png" alt="Elementary">
+        <h3>Elementary School</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus sodales.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card" style="background: linear-gradient(135deg, #f8e9fd, #f0d9ff);">
+        <img src="assets/middle.png" alt="Middle">
+        <h3>Middle (10-16 Years)</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus sodales.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="arrow-buttons">
+      <button>&lt;</button>
+      <button>&gt;</button>
+    </div>
+  </section>
+</body>
+</html>

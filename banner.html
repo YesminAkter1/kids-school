@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering Banner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Quicksand", serif;
+      background-color: #f8f9fa;
+    }
+    .banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      background-color: #ffffff;
+    }
+    .banner-content {
+      max-width: 50%;
+    }
+    #empower{
+        color: rgb(254, 163, 1); }
+    .banner-content h1 {
+      font-size: 2.5rem;
+      color: rgb(17, 17, 17); 
+      margin-bottom: 10px;
+    }
+    .banner-content h1 span {
+      color: #007bff;
+    }
+    .banner-content p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    .banner-content .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .banner-image {
+      max-width: 40%;
+      position: relative;
+    }
+    .banner-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+
+  /*media query*/
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust Banner Layout */
+    .banner {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .banner-image {
+      order: -1; /* Move image to the top */
+      max-width: 80%;
+      margin: 0 auto 20px; /* Center image with space below */
+    }
+
+    .banner-image img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .banner-content {
+      max-width: 100%;
+      text-align: center; /* Center-align content */
+    }
+
+    .banner-content h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .banner-content p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .banner-content .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    /* Further Adjustments for Extra Small Devices */
+    .banner {
+      padding: 15px;
+    }
+
+    .banner-image {
+      max-width: 90%;
+    }
+
+    .banner-content h1 {
+      font-size: 1.5rem;
+    }
+
+    .banner-content p {
+      font-size: 0.8rem;
+    }
+
+    .banner-content .btn {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+</style>
+
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="banner-content">
+      <h1><span id="empower">Empowering</span> <br> students from small age <span>towards vision</span></h1>
+      <p>With the courage, Confidence, Creativity, and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+      <a href="#" class="btn">Enroll Now</a>
+    </div>
+    <div class="banner-image">
+      <img src="assets/hero-kids.png" alt="Superhero kid">
+    </div>
+  </div>
+</body>
+</html>

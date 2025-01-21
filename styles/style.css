@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    background: url('assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: #fff;
+    border-bottom: 2px solid #f0a500;
+    position: relative;
+}
+
+.logo img {
+    width: 50px;
+}
+.contact-btn {
+  border-radius: 8px;
+background: rgb(254, 163, 1);
+  color: white;
+  Font-weight:600;
+Font-size:20px;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Navigation Links (Desktop View) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+a:link {
+  
+  font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+  
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+}
+
+/* Menu Icon (Hamburger) */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 25px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 4px;
+    transition: transform 0.3s;
+}
+
+/* Hidden Checkbox for Toggling Menu */
+.menu-toggle {
+    display: none;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        flex-direction: column;
+        width: 200px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Show Menu when Checkbox is Checked */
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    /* Animate the Hamburger Icon */
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+    
