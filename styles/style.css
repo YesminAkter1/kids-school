@@ -219,7 +219,8 @@ line-height: 30px;
   .stories {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to bottom, #fdfcfb, #f3f3f3), url('assets/background.jpg');
+    background: linear-gradient(to bottom, #fdfcfb, #f3f3f3), 
+    url('assets/bg.png');
     background-size: cover;
     color: #333;
   }
