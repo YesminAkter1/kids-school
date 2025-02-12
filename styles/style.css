@@ -27,8 +27,9 @@ background: rgb(254, 163, 1);
   Font-weight:600;
 Font-size:20px;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   cursor: pointer;
+  
 }
 
 /* Navigation Links (Desktop View) */
